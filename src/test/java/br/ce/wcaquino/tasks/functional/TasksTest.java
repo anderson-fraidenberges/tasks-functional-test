@@ -12,6 +12,7 @@ import org.junit.Assert;
 public class TasksTest {
 	
 	private WebDriver acessarAplicacao() {
+		System.setProperty("webdriver.chrome.driver", "D:\\devops\\chromedriver\\chromedriver.exe");
 		 WebDriver driver = new  ChromeDriver();
 		 driver.navigate().to("http://localhost:8001/tasks");
 		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
